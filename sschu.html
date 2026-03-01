@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Students Club - Rajbari</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+body{
+    background:linear-gradient(to bottom,#000,#001f3f);
+    color:#fff;
+}
+
+/* HEADER */
+header{
+    display:flex;
+    align-items:center;
+    gap:15px;
+    padding:15px 20px;
+    background:#000;
+}
+header img{
+    width:55px;
+    height:55px;
+    border-radius:50%;
+}
+header h2{font-size:22px;}
+header p{font-size:14px;opacity:0.8;}
+
+/* NAV */
+nav{
+    background:#000;
+    text-align:center;
+    padding:12px;
+    position:sticky;
+    top:0;
+    z-index:5;
+}
+nav a{
+    color:#fff;
+    margin:0 12px;
+    text-decoration:none;
+    font-weight:bold;
+}
+nav a:hover{
+    color:#3fa9f5;
+    border-bottom:2px solid #3fa9f5;
+}
+
+/* SLIDER */
+.slider{
+    position:relative;
+    width:100%;
+    height:220px;
+    overflow:hidden;
+}
+.slide{
+    position:absolute;
+    inset:0;
+    opacity:0;
+    transition:opacity 5s;
+}
+.slide.active{opacity:5;}
+.slide img{
+    width:100%;
+    height:210px;
+    object-fit:cover;
+}
+.slide-text{
+    position:absolute;
+    left:50%;
+    bottom:35%;
+    transform:translateX(-50%);
+    background:
+    padding:12px 25px;
+    border-radius:60px;
+    font-size:40px;
+    font-weight:bold;
+    animation:move 10s infinite alternate;
+}
+@keyframes move{
+    from{transform:translate(-50%,0);}
+    to{transform:translate(-50%,-20px);}
+}
+
+/* SECTION */
+.section{
+    padding:50px 15px;
+    text-align:center;
+}
+.box{
+    background:linear-gradient(to right,#001f3f,#003366);
+    margin:20px auto;
+    border-radius:12px;
+    padding:30px;
+    max-width:900px;
+}
+button{
+    padding:12px 30px;
+    background:#1e90ff;
+    border:none;
+    color:#fff;
+    border-radius:25px;
+    cursor:pointer;
+}
+button:hover{background:#3fa9f5;}
+
+/* MODAL */
+.modal{
+    display:none;
+    position:fixed;
+    inset:0;
+    background:rgba(0,0,0,0.7);
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+.modal-content{
+    background:#001f3f;
+    padding:25px;
+    border-radius:12px;
+    width:90%;
+    max-width:320px;
+}
+input{
+    width:100%;
+    padding:10px;
+    margin:8px 0;
+    border-radius:6px;
+    border:none;
+}
+
+/* FOOTER */
+footer{
+    background:#000;
+    text-align:center;
+    padding:15px;
+    opacity:0.7;
+}
+
+/* RESPONSIVE */
+@media(max-width:600px){
+    .slide-text{
+        font-size:18px;
+        padding:8px 16px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <img src="logo.jpg">
+    <div>
+        <h2>Students Club</h2>
+        <p>Rajbari</p>
+    </div>
+</header>
+
+<nav>
+     <a href="home.html">Home</a>
+    <a href="about.html">About</a>
+   <a href="activities.html">Activities</a>
+    <a href="exam.html">Online Exam</a>
+     <a href="contract.html">Contact</a>
+</nav><style>
+body{
+    margin:0;
+    font-family: Arial, Helvetica, sans-serif;
+    background:#f5f7fa;
+}
+
+/* Main box */
+.wrapper{
+    max-width:700px;
+    margin:60px auto;
+    text-align:center;
+}
+
+/* Heading */
+.wrapper h2{
+    color:#0b3c5d; /* navy blue */
+    margin-bottom:30px;
+}
+
+/* Button style cards */
+.subject{
+    background:#ffffff;
+    border-left:6px solid #1ca9c9; /* accent */
+    padding:20px;
+    margin:20px 0;
+    border-radius:10px;
+    font-size:20px;
+    font-weight:600;
+    color:#0b3c5d;
+    cursor:pointer;
+    box-shadow:0 6px 12px rgba(0,0,0,0.12);
+    transition:0.3s;
+}
+
+.subject:hover{
+    background:#1ca9c9;
+    color:#fff;
+    transform:translateY(-4px);
+}
+
+/* Serial number */
+.serial{
+    font-size:16px;
+    color:#777;
+    margin-right:10px;
+}
+</style>
+</head>
+
+<body>
+
+<div class="wrapper">
+    <h2>SELECT FOR EXAM</h2>
+
+    <div class="subject">
+        <span class="serial"></span>BANGLA
+
+    </div>
+
+    <div class="subject">
+        <span class="serial"></span> ENGLISH
+    </div>
+
+    <div class="subject">
+        <span class="serial"></span> MATH
+    </div>
+
+ <div class="subject">
+        <span class="serial"></span>HISTORY
+
+    </div>
+
+    <div class="subject">
+        <span class="serial"></span> GEOGRAPHY
+    </div>
+
+    <div class="subject">
+        <span class="serial"></span> ECONOMIC
+    </div>
+ <div class="subject">
+        <span class="serial"></span> CIVICS
+    </div>
+
+    <div class="subject">
+        <span class="serial"></span> AGRICULTURE
+    </div>
+<div class="subject">
+        <span class="serial"></span> ICT
+    </div>
+    <div class="subject">
+        <span class="serial"></span> RELIGEON
+    </div>
+<div class="subject">
+        <span class="serial"></span> GENERAL SCIENCE
+    </div>
+
+</div>
+
+</body>
+</html>
